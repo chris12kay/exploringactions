@@ -3,7 +3,7 @@ on: push
 jobs:
   Example-Actions-Job:
     name: Exploring Github Actions
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Name - ${{ github.event.inputs.name }}"
       - run: echo "Deploy code - ${{ github.event.inputs.deploy }}"
